@@ -67,7 +67,7 @@ export function Appointment({ data, ...rest }: Props) {
                 styles.player,
                 { color: owner ? primary : on }
               ]}>
-                {owner ? 'Anfritrião' : 'Visitante'}
+                {owner ? 'Anfitrião' : 'Visitante'}
               </Text>
             </View>
           </View>
