@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, FlatList, Text } from 'react-native';
+import { useNavigation, useNavigationState } from '@react-navigation/native';
 
 import { ButtonAdd } from '../../components/ButtonAdd';
 import { CategorySelect } from '../../components/CategorySelect';
@@ -12,7 +13,8 @@ import {ListDivider} from '../../components/ListDivider';
 import {Background} from '../../components/Background';
 import { styles } from './style';
 
-const appointments = [
+
+export const appointments = [
   {
     id: '1',
     guild: {
@@ -23,7 +25,7 @@ const appointments = [
     },
     category: '1',
     date: '27/06 às 14:30h',
-    description: 'Fifa Ultimate team'
+    description: 'Fifa Ultimate team, o desafio é chegar na primeira divisão'
   },
   {
     id: '2',
@@ -40,10 +42,21 @@ const appointments = [
 ]
 
 export function Home() {
+  const navigation = useNavigation();
   const [category, setCategory] = useState('');
 
   function handleCategorySelect(categoryId: string) {
     categoryId === category ? setCategory('') : setCategory(categoryId);
+  }
+
+  function handleAppointmentDetails() {
+    navigation.navigate('AppointmentDetails')
+
+  }
+
+  function handleAppointmentCreate() {
+    navigation.navigate('AppointmentCreate')
+
   }
   
   return (
@@ -51,7 +64,9 @@ export function Home() {
       <View style={styles.container}>
         <View style={styles.header}>
           <Profile />
-          <ButtonAdd />
+          <ButtonAdd 
+          onPress={handleAppointmentCreate}
+          />
         </View>
 
         <CategorySelect
@@ -69,7 +84,10 @@ export function Home() {
             data={appointments}
             keyExtractor={item => item.id}
             renderItem={({ item }) => (
-              <Appointment data={item} />
+              <Appointment 
+              data={item}
+              onPress={handleAppointmentDetails}
+              />
             )}
             ItemSeparatorComponent={() => <ListDivider/>}
             style={styles.matches}
