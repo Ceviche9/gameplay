@@ -14,8 +14,8 @@ import { theme } from '../../global/styles/theme';
 import { styles } from './styles';
 
 import { CategorySelect } from '../../components/CategorySelect';
-import { ModalView } from '../../components/ModalView';
 import { SmallInput } from '../../components/SmallInput';
+import { ModalView } from '../../components/ModalView';
 import { GuildIcon } from '../../components/GuildIcon';
 import { TextArea } from '../../components/TextArea';
 import { GuildProps } from '../../components/Guild';
@@ -39,18 +39,21 @@ export function AppointmentCreate(){
   }
 
   return (
+
     <KeyboardAvoidingView 
       behavior={Platform.OS === 'ios' ? 'padding' : 'height' }
-      style={styles.container}
-    >
+      style={styles.container}>
+
       <ScrollView>  
-        <Header 
-          title="Agendar partida"
-        />
+        <View style={styles.header} >
+          <Header 
+            title="Agendar partida"
+          />
+        </View>
 
         <Text style={[
           styles.label, 
-          { marginLeft: 24, marginTop: 36, marginBottom: 18 }]}
+          { paddingLeft: 24, paddingTop: 20, paddingBottom: 18 }]}
         >
           Categoria
         </Text>
@@ -140,6 +143,8 @@ export function AppointmentCreate(){
       <ModalView visible={openGuildsModa}>
         <Guilds handleGuildSelect={handleGuildSelect}/>
       </ModalView>
+
+
     </KeyboardAvoidingView>
   );
 }

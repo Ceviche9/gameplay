@@ -24,7 +24,7 @@ export const styles = StyleSheet.create({
   category: {
     fontFamily: theme.fonts.text400,
     color: theme.colors.highlight,
-    fontSize: 13,
+    fontSize: 14,
     marginRight: 24
   },
   footer: {
@@ -43,7 +43,7 @@ export const styles = StyleSheet.create({
   date: {
     fontFamily: theme.fonts.text500,
     color: theme.colors.heading,
-    fontSize: 13,
+    fontSize: 10,
     marginLeft: 7
   },
   player: {

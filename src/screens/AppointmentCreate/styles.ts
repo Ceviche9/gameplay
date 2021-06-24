@@ -5,6 +5,13 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  header:{
+
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingTop: 10
+
+  },
   label: {
     fontSize: 15,
     fontFamily: theme.fonts.title700,

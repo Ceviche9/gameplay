@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { View, FlatList, Text } from 'react-native';
-import { useNavigation, useNavigationState } from '@react-navigation/native';
+import { View, FlatList } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import { ButtonAdd } from '../../components/ButtonAdd';
 import { CategorySelect } from '../../components/CategorySelect';
@@ -8,7 +8,6 @@ import { ListHeader } from '../../components/ListHeader';
 import { Appointment } from '../../components/Appointment';
 import { Profile } from '../../components/Profile';
 import {ListDivider} from '../../components/ListDivider';
-
 
 import {Background} from '../../components/Background';
 import { styles } from './style';
@@ -33,12 +32,48 @@ export const appointments = [
       id: '1',
       name: 'Survivors',
       icon: null,
+      owner: true
+    },
+    category: '1',
+    date: '23/06 às 21:00h',
+    description: 'Live do Nathan'
+  },
+  {
+    id: '3',
+    guild: {
+      id: '1',
+      name: 'Survivors',
+      icon: null,
       owner: false
     },
     category: '1',
     date: '23/06 às 21:00h',
     description: 'Live do Nathan'
-  }
+  },
+  {
+    id: '4',
+    guild: {
+      id: '1',
+      name: 'Survivors',
+      icon: null,
+      owner: true
+    },
+    category: '1',
+    date: '23/06 às 21:00h',
+    description: 'Live do Nathan'
+  },
+  {
+    id: '5',
+    guild: {
+      id: '1',
+      name: 'Survivors',
+      icon: null,
+      owner: false
+    },
+    category: '1',
+    date: '23/06 às 21:00h',
+    description: 'Live do Nathan'
+  },
 ]
 
 export function Home() {
@@ -60,8 +95,10 @@ export function Home() {
   }
   
   return (
+    
     <Background>
       <View style={styles.container}>
+        
         <View style={styles.header}>
           <Profile />
           <ButtonAdd 
@@ -80,6 +117,9 @@ export function Home() {
             subTitle="Total 6"
           />
 
+        
+        </View>
+         
           <FlatList
             data={appointments}
             keyExtractor={item => item.id}
@@ -93,8 +133,7 @@ export function Home() {
             style={styles.matches}
             showsHorizontalScrollIndicator={false}
           />
-
-        </View>
+          
       </View>
     </Background>
   )
