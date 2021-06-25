@@ -22,64 +22,28 @@ export function Home() {
       id: '1',
       guild: {
         id: '1',
-        name: 'Lendários',
+        name: 'Vem pro Fut',
         icon: null,
         owner: true
       },
       category: '1',
-      date: '22/06 às 20:40h',
+      date: '27/06 às 20:40h',
       description: 'É hoje que vamos chegar ao challenger sem perder uma partida da md10'      
     },
     {
       id: '2',
       guild: {
         id: '1',
-        name: 'Lendários',
+        name: 'Dead By Daylight',
         icon: null,
-        owner: true
+        owner: false
       },
       category: '1',
-      date: '22/06 às 20:40h',
+      date: '25/06 às 20:40h',
       description: 'É hoje que vamos chegar ao challenger sem perder uma partida da md10'      
     },
     {
       id: '3',
-      guild: {
-        id: '1',
-        name: 'Lendários',
-        icon: null,
-        owner: true
-      },
-      category: '1',
-      date: '22/06 às 20:40h',
-      description: 'É hoje que vamos chegar ao challenger sem perder uma partida da md10'      
-    },
-    {
-      id: '4',
-      guild: {
-        id: '1',
-        name: 'Lendários',
-        icon: null,
-        owner: true
-      },
-      category: '1',
-      date: '22/06 às 20:40h',
-      description: 'É hoje que vamos chegar ao challenger sem perder uma partida da md10'      
-    },
-    {
-      id: '5',
-      guild: {
-        id: '1',
-        name: 'Lendários',
-        icon: null,
-        owner: true
-      },
-      category: '1',
-      date: '22/06 às 20:40h',
-      description: 'É hoje que vamos chegar ao challenger sem perder uma partida da md10'      
-    },
-    {
-      id: '6',
       guild: {
         id: '1',
         name: 'Lendários',
