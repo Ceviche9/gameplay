@@ -12,12 +12,16 @@ import { ButtonIcon } from '../../components/ButtonIcon';
 import { useNavigation } from '@react-navigation/native';
 import {Background} from '../../components/Background';
 
+import { useAuth } from '../../hooks/auth';
+
 
 
 export function SignIn(){
 
   const navigation = useNavigation();
-  
+
+  const {user} = useAuth();
+
   function handleSingIn(){
 
     navigation.navigate('Home');
