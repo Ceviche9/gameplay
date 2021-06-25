@@ -5,9 +5,9 @@ import {
   Text
 } from 'react-native';
 
-import { styles } from './style';
+import { styles } from './styles';
 
-import { Avatar } from '../avatar';
+import { Avatar } from '../Avatar';
 import { theme } from '../../global/styles/theme';
 
 export type MemberProps = {

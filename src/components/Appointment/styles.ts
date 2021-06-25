@@ -19,31 +19,31 @@ export const styles = StyleSheet.create({
   title: {
     fontFamily: theme.fonts.title700,
     color: theme.colors.heading,
-    fontSize: 15
+    fontSize: 18
   },
   category: {
     fontFamily: theme.fonts.text400,
     color: theme.colors.highlight,
-    fontSize: 14,
+    fontSize: 13,
     marginRight: 24
   },
   footer: {
     width: '100%',
     flexDirection: 'row',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
   dateInfo: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   playersInfo: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   date: {
     fontFamily: theme.fonts.text500,
     color: theme.colors.heading,
-    fontSize: 10,
+    fontSize: 11,
     marginLeft: 7
   },
   player: {
@@ -51,5 +51,13 @@ export const styles = StyleSheet.create({
     fontSize: 13,
     marginLeft: 7,
     marginRight: 24
+  },
+  guildIconContainer: {
+    height: 68,
+    width: 64,
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 20
   }
-})
+});

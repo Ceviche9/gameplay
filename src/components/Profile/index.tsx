@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
 import {styles} from './styles';
-import {Avatar} from '../avatar'
+import {Avatar} from '../Avatar'
 
 export function Profile() {
 

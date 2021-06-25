@@ -17,27 +17,21 @@ import { ListDivider } from '../../components/ListDivider';
 import { Background } from '../../components/Background';
 import { ListHeader } from '../../components/ListHeader';
 import { ButtonIcon } from '../../components/ButtonIcon';
-import {Member} from '../../components/Member';
+import { Member } from '../../components/Member';
 import { Header } from '../../components/Header';
 
 export function AppointmentDetails(){
   const members = [
     {
       id: '1',
-      username: 'Tundê',
-      avatar_url: 'https://github.com/Ceviche9.png',
+      username: 'Rodrigo',
+      avatar_url: 'https://github.com/rodrigorgtic.png',
       status: 'online'
     },
     {
       id: '2',
-      username: 'Dudu',
-      avatar_url: 'https://github.com/dudubernardino.png',
-      status: 'offline'
-    },
-    {
-      id: '3',
-      username: 'Nathan',
-      avatar_url: 'https://github.com/nathan-mascarenhas.png',
+      username: 'Rodrigo',
+      avatar_url: 'https://github.com/rodrigorgtic.png',
       status: 'offline'
     }
   ]
@@ -61,38 +55,34 @@ export function AppointmentDetails(){
         style={styles.banner}
       >
         <View style={styles.bannerContent}>
-          <Text style={styles.title}>  
-            Boleiros
+          <Text style={styles.title}> 
+            Lendários 
           </Text>
-            
+
           <Text style={styles.subtitle}>
-            Fifa Ultimate team, o desafio é chegar na primeira divisão
+            É hoje que vamos chegar ao challenger sem perder uma partida da md10
           </Text>
-        </View>   
+        </View>
       </ImageBackground>
 
-        <ListHeader
-        title={'Jogadores'}
-        subTitle={'Total 3'}
-        />
+      <ListHeader 
+        title="Jogadores"
+        subtitle="Total 3"
+      />
 
-        <FlatList
+      <FlatList 
         data={members}
         keyExtractor={item => item.id}
-        renderItem={({item}) => (
-            <Member
-            data={item}/>
+        renderItem={({ item }) => (
+          <Member data={item} />
         )}
-        ItemSeparatorComponent={() => <ListDivider/>}
+        ItemSeparatorComponent={() => <ListDivider />}
         style={styles.members}
-        />
+      />
 
-        <View style={styles.footer} >
-            <ButtonIcon
-            title={'Entrar na Call'}
-            />
-        </View>
-
+      <View style={styles.footer}>
+        <ButtonIcon title="Entrar na partida" />
+      </View>
     </Background>
   );
 }

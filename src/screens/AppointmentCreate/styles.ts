@@ -5,15 +5,8 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  header:{
-
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingTop: 10
-
-  },
   label: {
-    fontSize: 15,
+    fontSize: 18,
     fontFamily: theme.fonts.title700,
     color: theme.colors.heading,    
   },
@@ -39,7 +32,8 @@ export const styles = StyleSheet.create({
   image: {
     width: 64,
     height: 68,
-    backgroundColor: theme.colors.secondary50,
+    backgroundColor: theme.colors.secondary40,
+    borderColor: theme.colors.secondary50,
     borderWidth: 1,
     borderRadius: 8,    
   },
