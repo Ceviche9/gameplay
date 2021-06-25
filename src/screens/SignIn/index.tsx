@@ -2,14 +2,14 @@ import React from 'react';
 import { 
   View, 
   Text, 
-  Image,  
+  Image,
+  Alert  
 } from 'react-native';
 
 import IllustrationImg from '../../assets/illustration.png';
 import { styles } from './styles';
 
 import { ButtonIcon } from '../../components/ButtonIcon';
-import { useNavigation } from '@react-navigation/native';
 import {Background} from '../../components/Background';
 
 import { useAuth } from '../../hooks/auth';
@@ -18,16 +18,22 @@ import { useAuth } from '../../hooks/auth';
 
 export function SignIn(){
 
-  const navigation = useNavigation();
+  const {user, signIn} = useAuth();
 
-  const {user} = useAuth();
+  async function handleSingIn(){
 
-  function handleSingIn(){
+    try{
 
-    navigation.navigate('Home');
+      await signIn
+
+    }
+    catch(e){
 
 
+    }
+  
   }
+
   return(
     <Background>
       <View style={styles.container}>
