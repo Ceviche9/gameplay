@@ -141,13 +141,16 @@ export function AppointmentDetails(){
 
       }
   
+      {
+        guildSelected.guild.owner &&
       
       <View style={styles.footer}>
         <ButtonIcon 
         onPress={handleOpenGuild}
         title="Entrar na partida" />
       </View>
-
+      
+      }
 
     </Background>
   );
