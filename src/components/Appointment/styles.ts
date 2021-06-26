@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
   title: {
     fontFamily: theme.fonts.title700,
     color: theme.colors.heading,
-    fontSize: 18
+    fontSize: 15
   },
   category: {
     fontFamily: theme.fonts.text400,

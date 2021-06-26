@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   label: {
-    fontSize: 18,
+    fontSize: 16,
     fontFamily: theme.fonts.title700,
     color: theme.colors.heading,    
   },
@@ -23,7 +23,7 @@ export const styles = StyleSheet.create({
     borderRadius: 8,
     alignItems: 'center',    
     paddingRight: 25,
-    overflow: 'hidden',    
+    overflow: 'hidden',
   },
   selectBody: {
     flex: 1,

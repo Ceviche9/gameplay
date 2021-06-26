@@ -35,9 +35,6 @@ export function AuthRoutes() {
             name="AppointmentCreate"
             component={AppointmentCreate}
             />
-
-          
-            
         </Navigator>
 
     )
