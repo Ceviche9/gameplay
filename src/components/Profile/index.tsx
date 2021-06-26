@@ -9,37 +9,12 @@ export function Profile() {
 
     const { user, singOut } = useAuth();
 
-    function handleSingOut() {
-
-        Alert.alert('Logout', 'Deseja sair do Gameplay',
-        [
-            {
-                text: 'Não',
-                style: 'cancel'
-            },
-            {   
-                text: 'Sim',
-                onPress: () => singOut()
-
-            }
-        ])
-            
-    }
-
-
-
     return(
  
         <View style={styles.container}>
-
-      
-
-
-        <RectButton onPress={handleSingOut}>
             <Avatar
             urlImage={user.avatar}
             />
-        </RectButton>
             <View>
             <View style={styles.user}>
                 <Text style={styles.greeting}>

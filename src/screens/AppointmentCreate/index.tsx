@@ -32,7 +32,7 @@ import AsyncStorage, { useAsyncStorage } from '@react-native-async-storage/async
 
 export function AppointmentCreate(){
   const [category, setCategory] = useState('');
-  const [openGuildsModa, setOpenGuildsModal] = useState(false);
+  const [openGuildsModal, setOpenGuildsModal] = useState(false);
   const [guild, setGuild] = useState<GuildProps>({} as GuildProps);
 
   const [day, setDay] = useState('');
@@ -202,7 +202,7 @@ export function AppointmentCreate(){
       </Background>
 
 
-      <ModalView visible={openGuildsModa} closeModal={handleCloseGuilds}>
+      <ModalView visible={openGuildsModal} closeModal={handleCloseGuilds}>
         <Guilds handleGuildSelect={handleGuildSelect}/>
       </ModalView>
       
