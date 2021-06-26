@@ -16,7 +16,7 @@ import { categories } from '../../utils/categories';
 export type AppointmentProps = {
   id: string;
   guild: GuildProps;
-  category: string;
+  category?: string;
   date: string;
   description: string;
 }
@@ -37,7 +37,7 @@ export function Appointment({ data, ...rest }: Props) {
           style={styles.guildIconContainer}
           colors={[secondary50, secondary70]}
         >
-          <GuildIcon guildId={data.guild.id}  iconId={data.guild.icon}/>
+          <GuildIcon guildId={data.guild.id} iconId={data.guild.icon} />
         </LinearGradient>
 
         <View style={styles.content}>
@@ -47,7 +47,7 @@ export function Appointment({ data, ...rest }: Props) {
             </Text>
 
             <Text style={styles.category}>
-              { category.title }
+                {category?.title}
             </Text>
           </View>
 

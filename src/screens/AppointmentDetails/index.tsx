@@ -125,7 +125,7 @@ export function AppointmentDetails(){
      <>
         <ListHeader 
           title="Jogadores"
-          subtitle={`Total ${widget.members.length}`}
+          subtitle={`Total ${widget.members?.length}`}
         />
 
         <FlatList 

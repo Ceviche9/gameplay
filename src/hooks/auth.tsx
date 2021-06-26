@@ -97,11 +97,12 @@ function AuthProvider({ children }: AuthProviderProps) {
     [
         {
             text: 'Não',
-            style: 'cancel'
+            onPress: () => Delete()
         },
         {   
             text: 'Sim',
-            onPress: () => Delete()
+            style: 'cancel'
+            
 
         }
     ])
