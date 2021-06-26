@@ -60,7 +60,7 @@ export function AppointmentDetails(){
       const response = await api.get(`/guilds/${guildSelected.guild.id}/widget.json`);
       setWidget(response.data);
     } catch {
-      Alert.alert('Verifique as configurações do servidor. Será que o Widget está habilitado?');
+      Alert.alert('Verifique as configurações do servidor.');
     } finally {
       setLoading(false);
     }
