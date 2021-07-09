@@ -15,7 +15,7 @@ Clone the project and access the folder.
 
 ```bash
 $ git clone https://github.com/Ceviche9/gameplay
-$ cd nlw-gameplay
+$ cd gameplay
 ```
 
 Follow the steps below:
