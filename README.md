@@ -9,6 +9,21 @@ This project was developed using the following technologies:
 - [React Native](https://reactnative.dev/)
 - [Expo](https://expo.io/)
 
+## 🛠️ Features
+
+
+- OAuth2 Social Authentication with Discord server.
+- Gets the user's Discord profile (username and avatar);
+- Lists the Discord servers the user is part of;
+- Allows for the scheduling of matches;
+- Allows you to filter the matches by category;
+- Displays whether the match was scheduled on a own server (host) or on others' servers (guest);
+- Shares the invitation to join the user's server;
+- Allows redirecting the user to his own server;
+- Provides the Logout function.
+
+Translated with www.DeepL.com/Translator (free version)
+
 ## 🚀 Getting started
 
 Clone the project and access the folder.
