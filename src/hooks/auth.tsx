@@ -102,8 +102,6 @@ function AuthProvider({ children }: AuthProviderProps) {
         {   
             text: 'Sim',
             style: 'cancel'
-            
-
         }
     ])
 
