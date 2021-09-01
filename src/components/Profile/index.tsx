@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Alert } from "react-native";
 import {styles} from './styles';
-import {Avatar} from '../Avatar'
+import {Avatar} from '../avatar'
 import { useAuth } from "../../hooks/auth";
 import { RectButton } from "react-native-gesture-handler";
 
