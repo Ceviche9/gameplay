@@ -39,7 +39,7 @@ Follow the steps below:
 $ yarn
 
 # Start the project
-$ yarn start
+$ expo start
 ```
 
 ## 🔖 Layout
