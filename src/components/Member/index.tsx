@@ -7,7 +7,7 @@ import {
 
 import { styles } from './styles';
 
-import { Avatar } from '../Avatar';
+import { Avatar } from '../avatar';
 import { theme } from '../../global/styles/theme';
 
 export type MemberProps = {
